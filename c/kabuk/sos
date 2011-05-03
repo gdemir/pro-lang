@@ -1,0 +1,22 @@
+#!/bin/sh
+
+use() 
+{
+	echo "kullanım : <sos> <KOMUT>"
+	echo "KOMUT    : <ls> dosya veya dizinleri görüntüler"
+	echo "           <hesap> verilen 2 sayı arasında işlem yapar"
+	echo "           <sos> komutlar hakkında yardım verir"
+	exit 1
+}
+
+if [ $# -eq 0 ]
+then
+	use
+fi
+
+case $1 in
+    hesap) echo "hesap : kullanim <hesap> <arg1> <islem> <arg2> ";;
+    ls)    echo "ls : kullanım <ls> <dosya veya dizin ismi> ";;
+    sos)   echo "sos <hesap>, <ls>, <sos> işlemleri hakkında yardım verir.";;
+    *)	   use ;;
+esac
