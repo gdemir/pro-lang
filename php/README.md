@@ -1,4 +1,4 @@
-### php kodlarim
+### php kodlarım
 
 Bu depoda **`php`**de yazdığım çesitli kodları bulacaksınız.
 

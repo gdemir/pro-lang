@@ -1,4 +1,4 @@
-### C kodlarım
+### c kodlarım
 
 Bu depoda **`c`** de yazdığım çesitli kodları bulacaksınız.
 

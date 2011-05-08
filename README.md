@@ -2,7 +2,7 @@
 
 - **[c kodlarım](http://github.com/gdemir/pro-lang/tree/master/c/)**
 
-- **[c# kodlarım](http://github.com/gdemir/pro-lang/tree/master/c#/)**
+- **[c# kodlarım](http://github.com/gdemir/pro-lang/tree/master/csharp/)**
 
 - **[java kodlarım](http://github.com/gdemir/pro-lang/tree/master/java/)**
 
