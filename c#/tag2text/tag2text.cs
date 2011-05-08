@@ -122,7 +122,7 @@ namespace proje1 {
 	}
 	class Program {
 		static void Main() {
-			string str = ReadWrite.read("C:/kaynak.txt");
+			string str = ReadWrite.read("t1.txt");
 			string result;
 			if ((result = Tag2Text.process(str)) != "")
 				Console.WriteLine("{0}", result);

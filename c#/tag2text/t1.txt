@@ -1,0 +1,15 @@
+<h>ali</h><b>matematige benzer</b> sekilde <u>bilgisayar</u> bilimi bilginin, <p>ozellikle
+elektronik
+makineler araciligiyla</p> duzenli ve ussal bicimde islenmesi bilimidir.
+<h>bunun yani sira</h>
+bilgisayar bilimi bilgi islemlerinde uygulanabilen matematiksel yapilari da
+inceler. <u>amaci ve <b>gorevi</b></u> bir <b><u>yandan</u></b> temel <b><p>aksiyomatik</p></b>
+matematiksel <p><b>kuramlar</b></p> uretmek, ikinci olarak tum diger uzmanlik
+dallarinin
+nesnelerini ve sureclerini cozumleyip soyut matematiksel yapilara ve
+algoritmalara
+donusturmek ve <h><p><u><b>ucuncu olarak</b></u></p></h> soyut matematiksel
+yapilarin
+aktarilabilecegi, saklanabilecegi ve algoritmalarla otomatik olarak
+islenebilecegi matematiksel
+makinalari tasarlamaktir.
