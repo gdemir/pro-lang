@@ -4,20 +4,16 @@ using System.IO;
 namespace proje1 {
     class KelimeAgaci {
         private string mean;
-        KelimeAgaci[] classes = new KelimeAgaci[26];
-        char[] alpha = {
-            'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
-            'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
-        };
+        KelimeAgaci[] nodes = new KelimeAgaci[26];
         public KelimeAgaci() {
             mean = "";
         }
         public void KelimeEkle(string key, string value) {
             if (key != "") {
-                int index = Array.IndexOf(alpha, key[0]);
-                if (classes[index] == null)
-                    classes[index] = new KelimeAgaci();
-                classes[index].KelimeEkle(key.Substring(1), value);
+                int index = key[0] - 'a';
+                if (nodes[index] == null)
+                    nodes[index] = new KelimeAgaci();
+                nodes[index].KelimeEkle(key.Substring(1), value);
             } else
                 if (mean == "" || mean == "[bu kelime daha onceden silinmis]")
                     mean = value;
@@ -26,17 +22,17 @@ namespace proje1 {
         }
         public string AnlamBul(string key) {
             if (key != "") {
-                int index = Array.IndexOf(alpha, key[0]);
-                if (classes[index] == null)
+                int index = key[0] - 'a';
+                if (nodes[index] == null)
                     return "[Kelime Bulunamadi]";
-                return classes[index].AnlamBul(key.Substring(1));
+                return nodes[index].AnlamBul(key.Substring(1));
             } else
                 return mean;
         }
         public void KelimeSil(string key) {
             if (key != "") {
-                int index = Array.IndexOf(alpha, key[0]);
-                classes[index].KelimeSil(key.Substring(1));
+                int index = key[0] - 'a';
+                nodes[index].KelimeSil(key.Substring(1));
             } else
                 mean = "[bu kelime daha onceden silinmis]";
         }
