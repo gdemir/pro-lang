@@ -15,7 +15,7 @@ namespace proje1 {
                     nodes[index] = new KelimeAgaci();
                 nodes[index].KelimeEkle(key.Substring(1), value);
             } else
-                if (mean == "" || mean == "[bu kelime daha onceden silinmis]")
+                if (mean == "" || mean == "[bu kelime daha onceden silinmis]") // ikisinide boş olarak gör.
                     mean = value;
                 else
                     mean += "; " + value;
