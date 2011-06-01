@@ -18,17 +18,19 @@ mvi m, 01h
 
 
 lhld 2000H
-sphl            ;sp = 0100
+sphl            ; sp = 0100 | sp = hl
 lhld 3000H
-xchg            ;de = 0100
-lxi h, 0000h	;
-lxi b, 0000h    ;
+xchg            ; de = 0100 | de <-> hl | sayaç
+lxi h, 0000h
+lxi b, 0000h
 
-next:	dad sp  ;hl = hl + sp
-	jc var  ;elde var
+; sonuc -> bc + hl
+
+next:	dad sp  ; hl = hl + sp
+	jc var  ; elde var
 	dcx d
 	jnz next
 	hlt
-var:	inx b   ;bc = bc + 1
+var:	inx b   ; bc = bc + 1
 	jnz next
 	hlt
