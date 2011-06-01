@@ -18,9 +18,9 @@ mvi m, 01h
 
 
 lhld 2000H
-sphl            ;sp = 2000
+sphl            ;sp = 0100
 lhld 3000H
-xchg            ;de = 3000
+xchg            ;de = 0100
 lxi h, 0000h	;
 lxi b, 0000h    ;
 
