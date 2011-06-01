@@ -1,4 +1,4 @@
-; 2 16 - bit sayıyı çarpma
+; 2, 16 - bit sayıyı çarpma
 ; lhld 2000H
 ; sphl      ; stack 16 bit var.
 ; lhld 3000H
