@@ -50,7 +50,7 @@ def choice3():     clc_exp();giris.insert(END, "3")
 def choice2():     clc_exp();giris.insert(END, "2")
 def choice1():     clc_exp();giris.insert(END, "1")
 def choice0():     clc_exp();giris.insert(END, "0")
-def choice00():     clc_exp();giris.insert(END, "00")
+def choice00():    clc_exp();giris.insert(END, "00")
 def choiceopen():  clc_exp();giris.insert(END, "(")
 def choiceclose(): clc_exp();giris.insert(END, ")")
 def choiceadd():   new_exp();giris.insert(END, "+")
@@ -101,7 +101,7 @@ buton(pc, [
 	('8', choice8),
 	('9', choice9),
 	('/', choicediv),
-	('←',choiceback),
+	('←', choiceback),
 	('c', delete),
    ],
    0.2, 0.5, 0.07, 0.1, 0.1, 0)
